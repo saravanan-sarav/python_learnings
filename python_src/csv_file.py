@@ -37,7 +37,7 @@ def writeCSV():
         print("Error: The file 'sortedcsv.csv' already exists.")
         newFile = open("sortedcsv.csv", mode="w",newline="")
 
-    csv_writer = csv.writer(newFile,delimiter=":")
+    csv_writer = csv.writer(newFile,delimiter=",")
     for line in csv_file:
         if line == csv_file[0]:
             csv_writer.writerow([line[9],"name"])
