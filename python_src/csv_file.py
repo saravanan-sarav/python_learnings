@@ -1,9 +1,5 @@
 import csv
 
-# data = open("customers-100.csv",mode="r")
-# csv_file = csv.reader(data)
-# csv_file = list(csv_file)
-# print(csv_file[1])
 def getAllEmails():
     data = open("customers-100.csv",mode="r")
     csv_file = csv.reader(data)
@@ -47,6 +43,6 @@ def writeCSV():
     data.close()
     newFile.close()
 
-getAllEmails()
-getAllNames()
+# getAllEmails()
+# getAllNames()
 writeCSV()
